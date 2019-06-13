@@ -7,6 +7,7 @@
         </div>
       </div>
       <div class="row">
+        <%- page.content %>
         <div class="col-md-6">
         <% for (var i in page.left) { %>
           <p><a href="<%= page.left[i] %>" class="image-popup"><img src="<%= page.left[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
@@ -18,5 +19,4 @@
         <% } %>
         </div>
       </div>
-        <%- page.content %>
     </div>
