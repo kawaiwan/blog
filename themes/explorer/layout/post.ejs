@@ -2,7 +2,7 @@
 
       <div class="row">
         <div class="col-md-6 col-md-offset-3 mb40 text-center">
-          <h2><%- typeof(page.left) %></h2>
+          <h2><%- page.title %></h2>
           <p>Posted  on September 3, 2017</p>
         </div>
       </div>
@@ -11,13 +11,12 @@
         <% for (var i in page.left) { %>
           <p><a href="<%= page.left[i] %>" class="image-popup"><img src="<%= page.left[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
         <% } %>
-
         </div>
         <div class="col-md-6">
-          <p><a href="/img/img_2.jpg" class="image-popup"><img src="/img/img_2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
-          <p><a href="/img/img_4.jpg" class="image-popup"><img src="/img/img_4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
-          <p><a href="/img/img_6.jpg" class="image-popup"><img src="/img/img_6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
+        <% for (var i in page.right) { %>
+          <p><a href="<%= page.right[i] %>" class="image-popup"><img src="<%= page.right[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
+        <% } %>
         </div>
       </div>
-      
+        <%- page.content %>
     </div>
