@@ -81,4 +81,4 @@ theme: explorer
 deploy:
   type: git
   repo: git@github.com:kawaiwan/blog.git
-  branch: publish
+  branch: gh-pages
