@@ -6,8 +6,22 @@
           <p>Posted on <%- page.date.format('MMMM D, YYYY') %></p>
         </div>
       </div>
-      <div class="row">
-        <%- page.content %>
+
+        <div class="row">
+            <div class="col-md-12">
+              <%- page.content %>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+              <% for (var i in page.gallery) { %>
+                <p><a href="<%= page.gallery[i] %>" class="image-popup gallery"><img src="<%= page.gallery[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
+              <% } %>
+            </div>
+        </div>
+
         <div class="col-md-6">
         <% for (var i in page.left) { %>
           <p><a href="<%= page.left[i] %>" class="image-popup"><img src="<%= page.left[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
@@ -18,5 +32,4 @@
           <p><a href="<%= page.right[i] %>" class="image-popup"><img src="<%= page.right[i] %>" class="img-responsive" alt="Free HTML5 Bootstrap Template"></a></p>
         <% } %>
         </div>
-      </div>
     </div>
