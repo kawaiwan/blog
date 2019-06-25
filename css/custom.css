@@ -1,1 +1,7 @@
 /* Your custom css code goes here */
+.gallery {
+    margin-bottom: unset;
+}
+.gallery img {
+	margin: auto;
+}
